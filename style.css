@@ -15,8 +15,8 @@
 	/* why is it so bright i copied the color from my vm */
 	background-color: #0178d7;
 	color: white;
-	overflow: hidden !important; /* no scrolling pls beg */
-	cursor: none !important;
+	overflow: hidden; /* no scrolling pls beg */
+	cursor: none;
 }
 #padding {
 	padding-top: var(--padding); /* why is CSS so fricking diffult to work with this is my workaround with #maintxt */
@@ -54,6 +54,10 @@
 	}
 	.maintext {
 		font-size: 2.5em;
+	}
+	* {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 

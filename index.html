@@ -16,36 +16,10 @@
 		<div id="padding"></div>
 		<p class="smiley">:(</p>
 		<p class="maintext" id="maintext">Your device ran into a problem and needs to restart. We're just<br>collecting some error info, and then we'll restart for you.</p>
-		<h6 class="maintext">0% complete</h6> <!-- why is javascript so difficult i have to change this from p to h6 just to make it work adasfsfsadads -->
-		<img src="qr.jpg" class="qr">
-		<p class="qrleft">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: CRITICAL_PROCESS_DIED</p>
+		<h6 class="maintext" id="percent">0% complete</h6> <!-- why is javascript so difficult i have to change this from p to h6 just to make it work adasfsfsadads -->
+		<img src="img/qrcode5.bmp" class="qr">
+		<h5 class="qrleft">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: CRITICAL_PROCESS_DIED</h5>
 	</body>
-	<script>
-		const fontAvailable = document.fonts.check("16px Segoe UI");
-		console.log(fontAvailable);
-		// if 16 px is there then all the others should too?
-		document.querySelector("h6").innerHTML = "69% complete";
-		if (!fontAvailable) {
-			// haha working in JAVA for 4 days paid off
-			// because js and java is basically the same in syntax
-			// maybe the same with c# but thats not the point
-			// this is going off topic
-			// todo: deleteme
-
-			alert("Hey there, you don't have the font Segoe UI! are you using the Microsoft Windows operating system? maybe NT 6.1?");
-			var headTag = document.getElementsByTagName('head')[0];
-			var linkTag = document.createElement('link');
-			linkTag.rel = 'stylesheet';
-			linkTag.href = 'backup-fonts.css';
-			headTag.appendChild(linkTag);
-		}
-
-		function changeBugcheckCode(newCode) {
-			document.querySelector("p .qrleft").innerHTML = "For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: " + newCode;
-		}
-		function changeProgressPercentage(newPercent) {
-			document.querySelector("h6").innerHTML = newPercent + "% complete";
-		}
-	</script>
+	<script async type="text/javascript" src="script.js"></script>
 	<!-- TODO: random % complete thingy -->
 </html>
