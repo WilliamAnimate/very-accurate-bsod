@@ -5,7 +5,7 @@
 > **Note**: this is not done
 
 <!-- todo: image -->
-<img width="68.5" height="97" style="float:left;margin:0 10px 0 0;" alt="logo" src="img/Screenshot%202023-06-16%20212118.png">
+<img width="68.5" height="97" align="left" style="float: left; margin: 0 10px 0 0;" alt="logo" src="img/Screenshot%202023-06-16%20212118.png">
 
 # very accurate bsod
 
