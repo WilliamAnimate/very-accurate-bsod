@@ -4,12 +4,21 @@
 
 > **Note**: this is not done
 
-<!-- todo: image -->
+<!-- todo: make img markdown-exclusive instead of using html -->
 <img width="68.5" height="97" align="left" style="float: left; margin: 0 10px 0 0;" alt="logo" src="img/Screenshot%202023-06-16%20212118.png">
 
 # very accurate bsod
 
 very accurate bsod made in html. Fear the [fake bsod](https://fakebsod.com).
+
+[![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) 
+
+[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
+
+[![forthebadge](img/works-exclusively-on-firefox.svg)](https://forthebadge.com)
+[![forthebadge](img/you-can-milk-this.svg)](https://forthebadge.com)
 
 * **Truely authentic** - Uses the Segoe UI font, and uses the qrcode5.bmp file from *bootres.dll*, a file from the operating system.
 
@@ -17,13 +26,13 @@ very accurate bsod made in html. Fear the [fake bsod](https://fakebsod.com).
 
 * **More accurate than other solutions** - try to search for fake bsod online. [maybe with an .hta file?](https://www.instructables.com/How-to-Make-a-BSOD-and-Scare-Your-Friends/) no! It can get grandmas but not anyone with a half-good eye.
 
-* **Legal** - ... probably...
-
 * **Open source** - I mean at least THIS and *Truely authentic* is true...
 
 * **Minimal** - CSS and HTML are so simple that even beginners can understand it, and small enough that the network can load it in time. <sup>forget about javascript</sup>
 
 * **Permissive** - Licensed under MIT, this means that you can do whatever you want with this, **just give me credit.**
+
+* **Tested** - please laugh.
 
 ## why did i make this?
 
