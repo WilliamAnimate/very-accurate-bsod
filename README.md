@@ -11,8 +11,10 @@
 
 very accurate bsod made in html. Fear the [fake bsod](https://fakebsod.com).
 
+<br> <!-- smol monitor fix -->
+
 [![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
 
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
@@ -50,9 +52,9 @@ every single fake bsod website has some inaccuracy, so i thoght, "what is so dif
 >
 > **You**: 👍
 
-## how do i use it
+## *"documentation"* - **how do i use it**
 
-**FOR STUDENTS** don't use this to skip school.
+**FOR STUDENTS** don't use this to skip school. They will tell you to hold the power button
 
 **FOR WEBSITE ADMINISTRATORS** if you're thinking of putting this on your website to get users to install malware, firstly, what the heck is wrong with you, and two, this won't get anyone either. Unless you get them to hit f11 first or something or autofullscreen javascript etc
 
@@ -60,7 +62,7 @@ In other words, if you're an administator, and you want to use this maliously, m
 
 **ANYTHING ELSE** this wont work either
 
-## features
+## actual "documentation"
 
 hit any key to increment the ``% complete`` counter
 
@@ -81,7 +83,7 @@ changeProgressPercentage("69");
 
 this will change the thing from "0% complete" to "69% complete".
 
-> **Warning**: you do not need to add a "%".
+> **Warning**: do not need add a "%". It is added for you.
 >
 > **Note**: you can make this call say anything you want, and is not limited to numbers.
 
@@ -111,7 +113,7 @@ A browser capable of loading spaghetti css and spaghetti js.
 
 *maybe* add macos screen as an option
 
-*maybe* add (ubuntu) linux screen as an option
+*maybe* add (ubuntu) linux screen as an option (if it even exists)
 
 *maybe* something random
 
