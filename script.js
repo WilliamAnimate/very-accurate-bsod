@@ -2,7 +2,6 @@
 const fontAvailable = document.fonts.check("16px Segoe UI");
 console.log("Segoe UI 16px font present on system: " + fontAvailable);
 
-debugEnableScrolling();
 if (!fontAvailable) {
 	console.warn("No Segoe UI font!");
 	alert("Hey there, you don't have the Segoe UI font installed! We are falling back to another font. Just so you know");
@@ -55,13 +54,4 @@ function changeBugcheckCode(newCode) {
 
 function changeProgressPercentage(newPercent) {
 	document.querySelector("h6").innerHTML = newPercent + "% complete";
-}
-
-function debugEnableScrolling() {
-	var headTag = document.getElementsByTagName('head')[0];
-	var linkTag = document.createElement('link');
-	linkTag.rel = 'stylesheet';
-	linkTag.href = 'debugCssFilesIgnoreMe/enableScroll.css';
-	headTag.appendChild(linkTag);
-	console.log("Enabled scrolling");
 }
