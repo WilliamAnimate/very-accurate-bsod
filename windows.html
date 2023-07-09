@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="Real bsod (real(real)(real(real(real)(real))))(real)" property="og:title"/>
+		<meta content="not a virus!" property="og:description"/>
+		<meta content="#" property="og:url"/>
+		<meta content="#" property="og:image"/>
+		<meta content="#0000ff" data-react-helmet="true" name="theme-color"/>
+
+		<style rel="stylesheet">
+			:root {
+				--padding: 45px;
+			}
+			* {
+				font-family: 'Segoe UI';
+				padding-bottom: var(--padding);
+				padding-left: var(--padding);
+				/* padding-right: var(--padding); */
+				padding-right: 0px;
+				font-weight: normal !important; /* important because no bold in bsod */
+				margin: 0px;
+				/* background-color: black; */
+				/* background-color: #0078d7; */
+				/* why is it so bright i copied the color from my vm */
+				background-color: #0178d7;
+				color: white;
+				overflow: hidden; /* no scrolling pls beg */
+				cursor: none;
+				user-select: none;
+			}
+			#padding {
+				padding-top: var(--padding); /* why is CSS so fricking diffult to work with this is my workaround with #maintxt */
+			}
+			.smiley {
+				font-size: 12em;
+				margin-bottom: 24px;
+				padding-bottom: 0px !important;
+			}
+			#maintxt {
+				/* position: absolute; */
+				margin-top: 16px;
+				padding-top: 0px !important;
+			}
+			.maintext {
+				font-size:3em;
+			}
+			.qr {
+				height:130px;
+				padding-right: 0px;
+			}
+			.qrleft {
+				position: absolute;
+				display: inline-block;
+				padding-left: 20px; /* so it appears a little bit closer to the edge */
+				font-size: 1.1em;
+			}
+
+			/* not wide */
+			@media (max-width: 1400px) {
+			/* @media (max-width: 4000px) { */
+				.smiley {
+					/* font-size: 10px; */
+					margin-bottom: 20px;
+				}
+				.maintext {
+					font-size: 2.5em;
+				}
+				* {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+
+			/* low screen */
+			@media (max-height: 1000px) {
+				#padding {
+					padding-top: 20px;
+				}
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>bsod</title>
+	</head>
+	<body>
+		<div id="padding"></div>
+		<p class="smiley">:(</p>
+		<p class="maintext" id="maintext">Your device ran into a problem and needs to restart. We're just<br>collecting some error info, and then we'll restart for you.</p>
+		<h6 class="maintext" id="percent">0% complete</h6> <!-- why is javascript so difficult i have to change this from p to h6 just to make it work adasfsfsadads -->
+		<img src="img/qrcode5.bmp" class="qr">
+		<h5 class="qrleft">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: CRITICAL_PROCESS_DIED</h5>
+	</body>
+	<script async type="text/javascript">
+		// Check if we have Segoe UI font
+		const fontAvailable = document.fonts.check("16px Segoe UI");
+		console.log("Segoe UI 16px font present on system: " + fontAvailable);
+
+		if (!fontAvailable) {
+			console.warn("No Segoe UI font!");
+			alert("Hey there, you don't have the Segoe UI font installed! We are falling back to another font. Just so you know");
+			var headTag = document.getElementsByTagName('head')[0];
+			var linkTag = document.createElement('link');
+			linkTag.rel = 'stylesheet';
+			linkTag.href = 'backup-fonts.css';
+			headTag.appendChild(linkTag);
+		}
+
+		// Get the URL fragment identifier
+		var URL = window.location.hash;
+		var URL = URL.substring(1); // Remove #
+
+		if (URL == "disablePercentDone") {
+			console.log("kk disabled percentDone");
+		} else {
+			function keydownHandler(event) {
+				// Retrieve the counter element
+				var counterElement = document.getElementById('percent');
+
+				// Pick random number to increment
+				var randomIncrement = Math.floor(Math.random() * 10) + 1;
+
+				// Convert the current counter value to an integer
+				var currentValue = parseInt(counterElement.innerText);
+
+				// Increment the counter by the random value
+				var newValue = currentValue + randomIncrement;
+				if (newValue >= "100") {
+					console.log("Key over 100. removing the eventListener");
+					document.removeEventListener('keyup', keydownHandler);
+					var newValue = "100";
+				}
+
+				changeProgressPercentage(newValue);
+			};
+
+			document.addEventListener('keyup', keydownHandler);
+		}
+
+		//
+		// Define functions
+		//
+
+		function changeBugcheckCode(newCode) {
+			document.querySelector("h5").innerHTML = "For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: " + newCode;
+			return "Changed the code to " + newCode;
+		}
+
+		function changeProgressPercentage(newPercent) {
+			document.querySelector("h6").innerHTML = newPercent + "% complete";
+		}
+	</script>
+	<!-- TODO: random % complete thingy -->
+</html>

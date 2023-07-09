@@ -15,15 +15,15 @@ very accurate bsod made in html. Fear the [fake bsod](https://fakebsod.com).
 
 * **Scales to monitors <a href="#1"><sup>1</sup></a>** - No matter your **COMPUTER** screen size, anything above ~600px width & length should fit. <a href="#2"><sup>2</sup></a>
 
-* **More accurate than other solutions** - try to search for fake bsod online. [maybe with an .hta file?](https://www.instructables.com/How-to-Make-a-BSOD-and-Scare-Your-Friends/) no! It can get grandmas but not anyone with a half-good eye.
+* **More accurate than other solutions** - try to search for fake bsod online. Some may be accurate, some may not be.
 
-* **Legal** - ... probably...
+<!-- why is this a link -->
 
-* **Open source** - I mean at least THIS and *Truely authentic* is true...
+* **Open source** - Absolutely true
 
 * **Minimal** - CSS and HTML are so simple that even beginners can understand it, and small enough that the network can load it in time. <sup>forget about javascript</sup>
 
-* **Permissive** - Licensed under MIT, this means that you can do whatever you want with this, **just give me credit.**
+* **Tested** - please laugh.
 
 ## why did i make this?
 
@@ -53,14 +53,34 @@ In other words, if you're an administator, and you want to use this maliously, m
 
 ## features
 
+<details>
+<summary>Windows documentation</summary>
+
 hit any key to increment the ``% complete`` counter
 
-> **don't want that to happen?** use the #disablePercentDone web argument.
->>*okay dont tell anyone but i couldn't get the counter to work by timing because while(true) lags everything*. lmao
+> **don't want that to happen?** use the #disablePercentDone web argument/link fragment.
+>>*okay dont tell anyone but i couldn't get the counter to work by timing because while(true) lags everything*.
+
+</details>
+
+<!-- <details>
+<summary>Mac documentation</summary>
+nah
+</details> -->
+
+<details>
+<summary>Linux documentation</summary>
+
+You dont do anything here. The javascript is a blinking cursor.
+
+</details>
 
 ### configurable
 
-how to manually configure stuff:
+How to configure the pages to your liking
+
+<details>
+<summary>Configuring the fake Windows BSOD</summary>
 
 in javascript, call ``changeProgressPercentage();``.
 
@@ -86,6 +106,15 @@ do it like this:
 changeBugcheckCode("CRITCAL_OBJECT_TERMINATION");
 ```
 
+</details>
+
+<details>
+<summary>Configuring the fake Linux Kernel panic</summary>
+
+**Currently, you do not.**
+
+</details>
+
 ## requirements
 
 You need the segoe ui font, in other words, just use Windows to load this
@@ -96,27 +125,17 @@ A browser capable of loading spaghetti css and spaghetti js.
 
 ## roadmap
 
-**Strike-through'd text means complete**.
-
-~~detect if you dont have font and display warn~~
+**Strikethrough text are completed tasks.**
 
 *maybe* add macos screen as an option
 
-*maybe* add (ubuntu) linux screen as an option
+~~Add Linux's kernel panic.~~
 
-*maybe* something random
-
-*for sure* mininify css file
+Extend Linux's kernel panic.
 
 *scale* display size if your display size is small.
 
-### latest changes
-
-added warning for no font (and added alternate fonts just in case). this might not work because i am on a chromebook right now.
-
-future william here, it did not. it wont work on my machine i am so angery
-
-#### disclaimers
+### disclaimers
 
 <div id="1"></div><sup>1 - it works on MY machine.</sup>
 <div id="2"></div><sup>2 - i never tested this</sup>

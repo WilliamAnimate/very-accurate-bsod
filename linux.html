@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="linux die screen" property="og:title"/>
+		<meta content="No init found." property="og:description"/>
+		<meta content="#" property="og:url"/>
+		<meta content="#" property="og:image"/>
+		<meta content="#0000ff" data-react-helmet="true" name="theme-color"/>
+
+		<style>
+			body {
+				color: white;
+				background-color: black;
+				font-family: 'Courier New', Courier, monospace;
+				margin: 0px;
+				padding: 0px !important;
+				cursor: none;
+				user-select: none;
+			}
+			.whitespace {
+				padding-right: 15px
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>bsod</title>
+	</head>
+	<body>
+		<!--
+		read https://elixir.bootlin.com/linux/v4.1/source/Documentation/init.txt
+		-->
+		<!-- TODO: make this longer so it looks more real. too much effort for now. -->
+		<p>pid_max: default: 32768 minimum: 301
+			<br>
+		Security Framework initialized
+			<br>
+		SELinux: <span class="whitespace"></span> initializing.
+			<br>
+		Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+			<br>
+		lnode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+			<br>
+			<!-- add more pls -->
+		[run_init_process] init_filename: /linuxrc, argv_init[0]: /linuxrc
+			<br>
+		[run_init_process] init_filename: /linuxrc, envp_init[0]: HOME=/
+			<br>
+		[do_execve count] bprm->argc: 1
+			<br>
+		[do_execve count] bprm->envc: 2
+			<br>
+		<!-- not found section -->
+		Failed to execute /linuxrc. <span class="whitespace"></span> Attempting defaults...
+			<br>
+		[run_init_process] init_filename: /sbin/init, argc_init[0]: /etc/init
+			<br>
+		[run_init_process] init_filename: /sbin/init, envp_init[0]: HOME=/
+			<br>
+		[do_execve count] bprm->argc: -14
+			<br>
+		[run_init_process] init_filename: /etc/init, argv_init[0]: /etc/init
+			<br>
+		[run_init_process] init_filename: /etc/init, argv_init[0]: HOME=/
+			<br>
+		[run_init_process] init_filename: /bin/init, argv_init[0]: /bin/init
+			<br>
+		[run_init_process] init_filename: /bin/init, envp_init[0]: HOME=/
+			<br>
+		one_wire_status: 2
+			<br>
+		[run_init_process] init_filename: /bin/sh, argv_init[0]: /bin/sh
+			<br>
+		[run_init_process] init_filename: /bin/sh, envp_init[0]: HOME=/
+			<br>
+		[do_execve count] bprm->argc: 14
+			<br>
+		Kernel panic - not syncing: No init found. <span class="whitespace"></span>Try passing init= option to kernel.
+			<br>
+		<!-- stack/backtrace -->
+		Backtrace: <br>
+		<!-- fixme wont render because <> -->
+		[&#x3c;c003420&#x3e;] (dump_backtrace+0x0/0x10c) from [&#x3c;c0341a30&#x3e;] (dump_stack+0x18/0x1c)
+			<br>
+		[&#x3c;c0341a18&#x3e;] (dump_backtrace+0x1c/0x10c) from [&#x3c;c0314a80&#x3e;] (panic+0x4c/0x114)
+			<br>
+		[&#x3c;c0341a34&#x3e;] (dump_backtrace+0x0/0x10c) from [&#x3c;c00084b4&#x3e;] (init_post+0xa8/0x10c)
+
+		<br>rc:00000000 r2: c386af00 r1:00000000one_wire_status: 4
+		<br>r0:c03f5df4
+			<br>
+		[&#x3c;c002f528#x3e;] (init_post+0x0/0x10c) from [&#x3c;c00084b4&#x3e;] (kernel_init+0xe4/0x114)
+		<br>rt:c001f930 r4:c049da40
+			<br>
+		[&#x3c;c002f528&#x3e;] (init_post+0x0/0x10c) from [&#x3c;0c004bbfc&#x3e;] (do_exit+0x0/0x620)
+		<br><span id="cursor">_</span>
+		<!-- FIXME: make the cursor hide -->
+		</p>
+
+		<!-- <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-ask.csdn.net%2Fupload%2F201805%2F11%2F1526049104_344764.jpg&f=1&nofb=1&ipt=8a0d4e86552734253bb22ba615bae4376326828c4e3718c09c824da9527b53ca&ipo=images"> -->
+		<!-- <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2Fw9UX2.png&f=1&nofb=1&ipt=d0e0f85499c3f109a618f5ab0a7ae7b7252fc8e9e8940639d3639ae3b71c3345&ipo=images"> -->
+
+		<noscript>
+			<p>Kernel panic - not syncing: <span class="whitespace"></span> turn on javascript for full functionality</p>
+		</noscript>
+	</body>
+	<script async type="text/javascript">
+		var invisible = true;
+		setInterval(() => {
+			if (invisible) {
+				document.getElementById('cursor').style.opacity = 0;
+				invisible = false;
+			} else {
+				document.getElementById('cursor').style.opacity = 1;
+				invisible = true;
+			}
+		}, 500);
+	</script>
+</html>
