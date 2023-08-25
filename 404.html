@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css"/>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;800&display=swap');
+			body {
+				color: white;
+				background-color: black;
+				font-family: lexend, monospace;
+				overflow: hidden;
+				text-align: center;
+			}
+			* {
+				margin: 0;
+				padding: 0
+			}
+			.fc {
+				font-family: "fira code"
+			}
+			.whitespace {
+				padding-right: 15px
+			}
+			h1 {
+				font-size: 10em; /* 10 times larger */
+				margin: 0px;
+			}
+
+			.slide-up-caption{color:#fff!important;transform:translateY(10%);transition:transform .3s ease-in-out}.slide-up-caption:hover{transform:translateY(0)}
+
+			.underline{position:relative;display:inline-block}.underline:after{content:'';position:absolute;width:100%;transform:scaleX(0);height:2px;bottom:0;left:0;background-color:#fff;transform-origin:bottom center;transition:transform .25s ease-out}.underline:hover:after{transform:scaleX(1);transform-origin:bottom center}
+		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>four hundered for</title>
 	</head>
 	<body>
-		<div id="padding"></div>
-		<p class="smiley">:(</p>
-		<p class="maintext" id="maintext">Your link is completely invalid and gone to a 404 page.</p>
-		<h6 class="maintext" id="percent">uh what do iw rite here</h6>
-		<img src="img/qrcode5.bmp" class="qr">
-		<h5 class="qrleft">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: CRITICAL_PROCESS_DIED</h5>
+		<h1 class="fc">404!</h1>
+		<h3 style="font-size: 2.5em">How came you here? Isn't this the wrong side of town for you? Did I tell you not to seek <s>the church</s> <a class="underline" href=".\index.html" style="color: #c0c0c0; text-decoration: none;">index.html</a></h3>
+		<!-- a future version of css.css fixes the slide-up-caption inline thing, but im too lazy to pull it out. Soon™ -->
+		<br>
+		<p onclick="r()" class="slide-up-caption underline">How came you here? Isn't this the wrong side of town for you? Did I tell you not to seek <s>the church</s> index.html? ↺</p>
 	</body>
+	<script>
+		let msgs=[
+			"How came you here? Isn't this the wrong side of town for you? Did I tell you not to seek <s>the church</s> index.html?", // haha half life 2 reference hahahahahhhaq laugh
+			"What brings you here?",
+			"Unable to begin kernel panic message simulation",
+			"Oops! This page seems to be missing.",
+			"We can't seem to find the page you're looking for.",
+			"Looks like you've hit a dead end.",
+			"The page you requested is not available.",
+			"This is not the page you are looking for.",
+			"Sorry, we couldn't find what you were looking for.",
+			"That's an error.",
+			"Come to find out, the page got stolen.",
+			"Come to find out, the page is gone.",
+		];
+		function r(){document.querySelector("p").innerHTML=(msgs[Math.floor(msgs.length*Math.random())]+" ↺")}
+	</script>
 </html>
