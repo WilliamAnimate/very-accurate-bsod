@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8"/>
-		<meta content="Real bsod (real(real)(real(real(real)(real))))(real)" property="og:title"/>
-		<meta content="not a virus!" property="og:description"/>
-		<meta content="#" property="og:url"/>
-		<meta content="#" property="og:image"/>
-		<meta content="#0000ff" data-react-helmet="true" name="theme-color"/>
+		<meta charset="UTF-8">
+		<!-- common -->
+		<meta name="description" content="The ultimate fake 'crash screen' for nobody's everyday needs">
+		<meta name="author" content="WilliamAnimate">
+		<meta name="copyright" content="WilliamAnimate">
+		<meta name="robots" content="index, follow">
+		<meta name="rating" content="safe for kids">
 
-		<link rel="stylesheet" href="style.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>bsod</title>
+		<meta itemprop="name" content="Very accurate BSOD">
+		<meta itemprop="description" content="The ultimate fake 'crash screen' for nobody's everyday needs">
+		<meta itemprop="image" content="https://williamanimate.github.io/very-accurate-bsod/images/metaimg.png">
+
+		<!-- opengraph -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://williamanimate.github.io/very-accurate-bsod/">
+		<meta property="og:title" content="Very accurate BSOD">
+		<meta property="og:description" content="The ultimate fake 'crash screen' for nobody's everyday needs">
+		<meta property="og:image" content="https://williamanimate.github.io/very-accurate-bsod/images/metaimg.png">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Very accurate BSOD</title>
+
+		<style>
+			/* william when css.css release */
+			@import url(https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;800&display=swap);a:hover,a:link,a:visited{background-color:transparent}:root{--bg-color:#eee;--bg-color-secondary:#adadad;--color-bg:#eee;--text-color:#1b1b1b;--text-color-vibrant:black;--text-color-gray:gray}@media(prefers-color-scheme:dark){:root{--bg-color:#1b1b1b;--bg-color-secondary:#313131;--color-bg:#1b1b1b;--text-color:#eee;--text-color-vibrant:white;--text-color-gray:lightgray}}body{font-family:lexend,sans-serif!important;background-color:var(--bg-color);color:var(--text-color);text-align:center;transition:background .5s}.container{display:flex;justify-content:center}.displaybox,.underline,code,pre,samp{display:inline-block}.content{background-color:var(--bg-color-secondary);width:60%}a:link,a:visited{color:#118bee;text-decoration:none}.title,a:hover{color:var(--text-color-vibrant)}.title:hover,a:hover{text-decoration:underline}.title{font-size:5rem;margin-top:1px;margin-bottom:24px}.subtitle{font-size:1em;margin-top:16px}.warning{color:red!important}.caution{color:#ff0}.yes{color:#90ee90}.displaybox{padding:20px 40px;border-radius:1rem}.displayboxicon{height:100px}.displayboxheading{margin:0!important;font-weight:700;color:var(--text-color-vibrant);font-size:2.5em}.displayboxmain{margin:0!important;color:var(--text-color);font-size:1em}.warn-bg{background-color:#610000}.caut-bg{background-color:#616100}.yes-bg{background-color:#90b190}code,pre,samp{background-color:#000;border-radius:1rem;color:var(--text-color-vibrant);padding:10px 20px}.slide-up-caption,.text{color:var(--text-color)!important;transform:translateY(10%);transition:transform .3s ease-in-out}.slide-up-caption:hover,.text:hover{transform:translateY(0)}hr{border:none;height:1px;background-color:#333}.underline{position:relative}.underline:after{content:'';position:absolute;width:100%;transform:scaleX(0);height:2px;bottom:0;left:0;background-color:var(--text-color);transform-origin:bottom middle;transition:transform .25s ease-out}.underline:hover:after{transform:scaleX(1);transform-origin:bottom middle}a.underline,h1.underline{text-decoration:none!important}
+
+			button {
+				border-radius: 1ex;
+				padding: 10px 20px;
+				background-color: #2e2e2e;
+				color: #fff;
+				border: transparent;
+				font-size: 16px;
+				cursor: pointer;
+				transition: background-color .5s; font-weight:400;
+			}
+			button:focus, button:hover {
+				background-color: #3a3a3a;
+			}
+
+			/* ??? wtf */
+			button {
+				font-family:lexend!important
+			}
+
+			.notImplemented {
+				background-color: #616100
+			}
+			.notImplemented:focus, .notImplemented:hover {
+				background-color: #c2c200;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="padding"></div>
-		<p class="smiley">:(</p>
-		<p class="maintext" id="maintext">Your device ran into a problem and needs to restart. We're just<br>collecting some error info, and then we'll restart for you.</p>
-		<h6 class="maintext" id="percent">0% complete</h6> <!-- why is javascript so difficult i have to change this from p to h6 just to make it work adasfsfsadads -->
-		<img src="img/qrcode5.bmp" class="qr">
-		<h5 class="qrleft">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: CRITICAL_PROCESS_DIED</h5>
+		<h1 class="title underline">Very Accurate BSOD</h1>
+		<p>Ever wanted to show that one screen but you're too scared to actually stop the kernel? This not-handy tool might not have you covered.</p>
+
+		<noscript>
+			<h1 class="caution title">Enable javascript!</h1>
+			<p class="caution">It is recommended to enable javascript.
+				<br>
+			Some parts of the site may still work, but others may not.
+				<br>
+			JS isn't used to do creepy tracking things, you can check for yourself <a href="https://github.com/williamanimate/very-accurate-bsod">at the source code</a>
+			</p>
+		</noscript>
+
+		<div class="displaybox warn-bg">
+			<h2 class="displayboxheading warning">Notice</h2>
+			<p class="displayboxmain warning">Very Accurate BSOD is still in development and some stuff won't look right, because everything is inaccurate.
+				<br>
+			This project is open to contributions, if you want to make a pull request or something.
+			</p>
+		</div>
+		<p>Have fun, and don't forget to use f11 to fullscreen!</p>
+		<h2>Select your bsod mode.</h2>
+		<h1>Windows</h1>
+		<h3>Windows 10-specific</h3>
+		<a href="windows.html"><button>Normal</button></a>
+		<!-- <button href="windows.html">Normal</button> -->
+		<a href="windows.html#disablePercentDone"><button>No counter increment</button></a>
+		<h3>Windows 11-specific (black background)</h3>
+		<a href="windows.html#blackbg"><button>Normal</button></a>
+		<a href="windows.html#blackbg-nocounter"><button>No counter increment</button></a>
+		<h3>Early boot error</h3>
+		<a href="windows-booterror.html"><button>Early boot error</button></a>
+		<!-- <h1>MacOS</h1>
+		<div class="displaybox caut-bg">
+			<h2 class="displayboxheading">Not implemented</h2>
+			<p class="displayboxmain">Sorry...</p>
+		</div> -->
+			<!-- <br><br> -->
+		<!-- i dont got no mac vm how do i do this -->
+		<!-- <button onclick='alert("Not implemented")'>Kernel panic</button> -->
+		<!-- <button onclick='alert("Not implemented")'>Crash screen</button> -->
+		<h1>Linux</h1>
+		<a href="linux.html"><button>Normal</button></a>
+		<a href="linux.html#jsless"><button>No blinking cursor</button></a>
 	</body>
-	<script async type="text/javascript" src="script.js"></script>
-	<!-- TODO: random % complete thingy -->
 </html>

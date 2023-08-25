@@ -1,0 +1,7 @@
+-rework the meta tags so they're more consistant and stuff.
+
+fix js and make css easier to read.
+
+add mac kernel panic or error in bootscreen.
+
+add favicons

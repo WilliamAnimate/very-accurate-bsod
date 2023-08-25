@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- common -->
+		<meta name="description" content="Windows /break boot parameter simulator">
+		<meta name="author" content="WilliamAnimate">
+		<meta name="copyright" content="WilliamAnimate">
+		<meta name="robots" content="index, follow">
+		<meta name="rating" content="safe for kids">
+
+		<meta itemprop="name" content="Windows /break boot parameter simulator">
+		<meta itemprop="description" content="Somebody passed the /break parameter to winload.exe">
+		<meta itemprop="image" content="https://williamanimate.github.io/very-accurate-bsod/images/metaimg.png">
+
+		<!-- opengraph -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://williamanimate.github.io/very-accurate-bsod/">
+		<meta property="og:title" content="Windows /break boot parameter simulator">
+		<meta property="og:description" content="Somebody passed the /break parameter to winload.exe">
+		<meta property="og:image" content="https://williamanimate.github.io/very-accurate-bsod/images/metaimg.png">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>/break</title>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+			body {
+				color: white;
+				background-color: black;
+				font-family: 'fira code', monospace;
+				margin: 0px;
+				padding: 0px;
+				cursor: none;
+				overflow: hidden;
+			}
+			.whitespace {
+				padding-right: 15px
+			}
+			#nocursor {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			img {
+				/* display: block; */
+				margin-left: auto;
+				margin-right: auto;
+				/* padding-top: 250px; */
+				/* could we get a more accurate value? */
+				padding-top: 20%;
+
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="nocursor"></div>
+		<img id="windows-logo" src="img/Windows.png" width="150px">
+		<p id="main" style="margin: 0" style="opacity: 0">
+			Your PC needs to restart.
+				<br>
+			Please hold down the power button.
+				<br>
+			Error Code: 0x00000078
+				<br>
+			Parameters:
+				<br>
+			0x80000003
+				<br>
+			0x814A503D
+				<br>
+			0x024B7834
+				<br>
+			0x824B7400
+		</p>
+	</body>
+	<script>
+		if (window.location.hash.substring(1) !== "jsless") {
+			document.getElementById('windows-logo').style.display = "block";
+			document.getElementById('main').style.opacity = 0;
+
+			setInterval(() => {
+				document.getElementById('windows-logo').style.display = "none";
+				document.getElementById('main').style.opacity = opacity = 1;
+			}, 1500);
+		}
+	</script>
+</html>

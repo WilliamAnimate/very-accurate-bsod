@@ -2,41 +2,42 @@
 
 <div id="top"></div>
 
-> **Note**: this is not done
+<!-- > **Note**: this is not done -->
 
-<!-- todo: make img markdown-exclusive instead of using html -->
-<img width="68.5" height="97" align="left" style="float: left; margin: 0 10px 0 0;" alt="logo" src="img/Screenshot%202023-06-16%20212118.png">
+<!-- todo: image -->
+<img width="68.5" height="97" style="float:left;margin:0 10px 0 0;" alt="logo" src="img/Screenshot%202023-06-16%20212118.png">
 
-# very accurate bsod
+# Very Accurate BSOD
 
-very accurate bsod made in html. Fear the [fake bsod](https://fakebsod.com).
+<br>
 
-<br> <!-- smol monitor fix -->
+<!-- damn forthebadge has expired or something -->
+[![forthebadge](https://raw.githubusercontent.com/BraveUX/for-the-badge/master/src/images/badges/ctrl-c-ctrl-v.svg)](https://github.com/BraveUX/for-the-badge)
+[![forthebadge](https://raw.githubusercontent.com/BraveUX/for-the-badge/master/src/images/badges/open-source.svg)](https://github.com/BraveUX/for-the-badge)
 
-[![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
+[![forthebadge](https://raw.githubusercontent.com/BraveUX/for-the-badge/master/src/images/badges/you-didnt-ask-for-this.svg)](https://github.com/BraveUX/for-the-badge)
+[![forthebadge](https://raw.githubusercontent.com/BraveUX/for-the-badge/master/src/images/badges/validated-html5.svg)](https://github.com/BraveUX/for-the-badge)
 
-[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
+[![forthebadge](img/works-exclusively-on-firefox.svg)](https://github.com/BraveUX/for-the-badge)
+[![forthebadge](img/you-can-milk-this.svg)](https://github.com/BraveUX/for-the-badge)
 
-[![forthebadge](img/works-exclusively-on-firefox.svg)](https://forthebadge.com)
-[![forthebadge](img/you-can-milk-this.svg)](https://forthebadge.com)
+The ultimate fake 'crash screen' for nobody's everyday needs
 
-* **Truely authentic** - Uses the Segoe UI font, and uses the qrcode5.bmp file from *bootres.dll*, a file from the operating system.
+## "Features"
+
+* **Truely authentic** - Uses the right font & also images extracted from system files if needed
 
 * **Scales to monitors <a href="#1"><sup>1</sup></a>** - No matter your **COMPUTER** screen size, anything above ~600px width & length should fit. <a href="#2"><sup>2</sup></a>
 
-* **More accurate than other solutions** - try to search for fake bsod online. [maybe with an .hta file?](https://www.instructables.com/How-to-Make-a-BSOD-and-Scare-Your-Friends/) no! It can get grandmas but not anyone with a half-good eye.
+* **Not just an image** - It's text.
 
-* **Open source** - I mean at least THIS and *Truely authentic* is true...
+* **Open source** - Absolutely true
 
 * **Minimal** - CSS and HTML are so simple that even beginners can understand it, and small enough that the network can load it in time. <sup>forget about javascript</sup>
 
-* **Permissive** - Licensed under MIT, this means that you can do whatever you want with this, **just give me credit.**
+* **Tested** - you cant test html.
 
-* **Tested** - please laugh.
-
-## why did i make this?
+## Why did I make this?
 
 every single fake bsod website has some inaccuracy, so i thoght, "what is so difficult in making one?"
 
@@ -52,26 +53,57 @@ every single fake bsod website has some inaccuracy, so i thoght, "what is so dif
 >
 > **You**: 👍
 
-## *"documentation"* - **how do i use it**
+## How do I use it
 
-**FOR STUDENTS** don't use this to skip school. They will tell you to hold the power button
+**FOR STUDENTS** yeah I wouldn't try using this to skip classes.
 
-**FOR WEBSITE ADMINISTRATORS** if you're thinking of putting this on your website to get users to install malware, firstly, what the heck is wrong with you, and two, this won't get anyone either. Unless you get them to hit f11 first or something or autofullscreen javascript etc
-
-In other words, if you're an administator, and you want to use this maliously, make sure your target is grandmas. This actually won't trick anyone.
+**FOR WEBSITE ADMINISTRATORS** if you're thinking of putting this on your website to get users to install malware, firstly, what the heck is wrong with you, and two, this won't trick anyone. You're welcome to try, though.
 
 **ANYTHING ELSE** this wont work either
 
-## actual "documentation"
+> **You**: but what if
+>
+> **Me**: nah
+>
+> **You**: b-
+>
+> **Me**: nope.
+> <!-- lmao trailing whitespace -->
+> **You**:  
+>
+> **Me**: absolutely not.
 
-hit any key to increment the ``% complete`` counter
+## Features
 
-> **don't want that to happen?** use the #disablePercentDone web argument.
->>*okay dont tell anyone but i couldn't get the counter to work by timing because while(true) lags everything*. lmao
+<details>
+<summary>Windows BSOD specific features</summary>
+
+The ``% complete`` counter increments automagically.
+
+> **don't want that to happen?** use the #disablePercentDone web argument/link fragment.
+
+</details>
+
+<!-- <details>
+<summary>Mac documentation</summary>
+nah
+</details> -->
+
+<details>
+<summary>Linux Kernel Panic specific features</summary>
+
+You dont do anything here. The javascript is a blinking cursor.
+
+</details>
 
 ### configurable
 
-how to manually configure stuff:
+How to configure the pages to your liking
+
+<details>
+<summary>Configuring the fake Windows BSOD</summary>
+
+So you may use javascript to manage it, just remember to link it, or make it inline.
 
 in javascript, call ``changeProgressPercentage();``.
 
@@ -83,7 +115,7 @@ changeProgressPercentage("69");
 
 this will change the thing from "0% complete" to "69% complete".
 
-> **Warning**: do not need add a "%". It is added for you.
+> **Warning**: Do not add a "%".
 >
 > **Note**: you can make this call say anything you want, and is not limited to numbers.
 
@@ -97,6 +129,15 @@ do it like this:
 changeBugcheckCode("CRITCAL_OBJECT_TERMINATION");
 ```
 
+</details>
+
+<details>
+<summary>Configuring the fake Linux Kernel panic</summary>
+
+**Currently, you do not.**
+
+</details>
+
 ## requirements
 
 You need the segoe ui font, in other words, just use Windows to load this
@@ -107,27 +148,21 @@ A browser capable of loading spaghetti css and spaghetti js.
 
 ## roadmap
 
-**Strike-through'd text means complete**.
+**Strikethrough text are completed tasks.**
 
-~~detect if you dont have font and display warn~~
+add macos screen as an option
 
-*maybe* add macos screen as an option
+~~Add Linux's kernel panic.~~
 
-*maybe* add (ubuntu) linux screen as an option (if it even exists)
-
-*maybe* something random
-
-*for sure* mininify css file
+Extend Linux's kernel panic.
 
 *scale* display size if your display size is small.
 
-### latest changes
+## Legal
 
-added warning for no font (and added alternate fonts just in case). this might not work because i am on a chromebook right now.
+Licensed under mit, attribution is required.
 
-future william here, it did not. it wont work on my machine i am so angery
-
-#### disclaimers
+### disclaimers
 
 <div id="1"></div><sup>1 - it works on MY machine.</sup>
 <div id="2"></div><sup>2 - i never tested this</sup>
