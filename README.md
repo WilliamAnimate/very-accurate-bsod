@@ -2,10 +2,9 @@
 
 <div id="top"></div>
 
-<!-- > **Note**: this is not done -->
-
-<!-- todo: image -->
-<img width="68.5" height="97" style="float:left;margin:0 10px 0 0;" alt="logo" src="img/Screenshot%202023-06-16%20212118.png">
+<!-- attribution for image code: https://github.com/microsoft/MS-DOS/blob/master/README.md?plain=1 -->
+<!-- TODO: make a dedicated file for attributions and credits -->
+<img width="68.5" height="97" align="left" style="float: left; margin: 0 10px 0 0;" alt="very-accurate-bsod logo" src="img/Screenshot%202023-06-16%20212118.png">
 
 # Very Accurate BSOD
 
@@ -27,7 +26,7 @@ The ultimate fake 'crash screen' for nobody's everyday needs
 
 * **Truely authentic** - Uses the right font & also images extracted from system files if needed
 
-* **Scales to monitors <a href="#1"><sup>1</sup></a>** - No matter your **COMPUTER** screen size, anything above ~600px width & length should fit. <a href="#2"><sup>2</sup></a>
+* **Scales to monitors [^1]** - No matter your **COMPUTER** screen size, anything above ~600px width & length should fit.[^2]
 
 * **Not just an image** - It's text.
 
@@ -115,9 +114,11 @@ changeProgressPercentage("69");
 
 this will change the thing from "0% complete" to "69% complete".
 
-> **Warning**: Do not add a "%".
->
-> **Note**: you can make this call say anything you want, and is not limited to numbers.
+> [!IMPORTANT]
+> Do not add a "%".
+
+> [!NOTE]
+> you can make this call say anything you want, and is not limited to numbers.
 
 **Changing the bugcheck code**:
 
@@ -162,9 +163,7 @@ Extend Linux's kernel panic.
 
 Licensed under mit, attribution is required.
 
-### disclaimers
-
-<div id="1"></div><sup>1 - it works on MY machine.</sup>
-<div id="2"></div><sup>2 - i never tested this</sup>
+[^1]: it works on MY machine.
+[^2]: i never tested this.
 
 # <a href="#top">back to top</a>
