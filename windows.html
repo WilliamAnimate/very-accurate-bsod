@@ -114,9 +114,9 @@
 		<div id="padding"></div>
 		<p id="smiley">:(</p>
 		<p class="maintext" id="maintext">Your device ran into a problem and needs to restart. We're just<br>collecting some error info, and then we'll restart for you.</p>
-		<h6 class="maintext" id="percent">0% complete</h6> <!-- why is javascript so difficult i have to change this from p to h6 just to make it work adasfsfsadads -->
+		<p class="maintext" id="percent">0% complete</p> <!-- why is javascript so difficult i have to change this from p to h6 just to make it work adasfsfsadads -->
 		<img src="img/qrcode5.bmp" id="qr">
-		<h5 class="qrleft">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info: <br>Stop code: NMI_HARDWARE_FAILURE</h5>
+		<p class="qrleft" id="qrleft">For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info: <br>Stop code: NMI_HARDWARE_FAILURE</p>
 	</body>
 	<script>
 		// Check if we have Segoe UI font
@@ -147,14 +147,13 @@
 		const action = actions[URL] || actions.default;
 		action();
 
-		// any chance we can optimize this?
 		function changeBugcheckCode(newCode) {
-			document.querySelector("h5").innerHTML = "For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: " + newCode;
+			document.getElementById("qrleft").innerHTML = "For more information about this issue and possible fixes, visit https://www.windows.com/stopcode<br><br>if you call a support person, give them this info:<br>Stop code: " + newCode;
 			return "Changed the code to " + newCode;
 		}
 
 		function changeProgressPercentage(newPercent) {
-			document.querySelector("h6").innerHTML = newPercent + "% complete";
+			document.getElementById("qr").innerHTML = newPercent + "% complete";
 		}
 
 		function useCustomBackground(color) {
